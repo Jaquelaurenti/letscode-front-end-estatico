@@ -1,0 +1,68 @@
+<!--
+  
+  1. Anatomia das Tags 
+    < ABERTURA > <a> 
+    < FECHAMENTO > <\a>
+    < CONTEÚDO > Fica entre a abertura da tag e o fechamento da mesma
+  2. Atributos
+      Então algumas tags possuem atributos que são obrigatórios para seu funcionamento
+      Tipos de Atributos:
+      "Texto": "armazenados dentro de aspas duplas, não usem aspas simples para setar atributos"
+      Booleano: Atributos do tipo booleanos, são true ou false.
+
+    3. Atributos Globais
+      Class:
+      ContentEditable:
+      Data:
+      Hidden: Serve para esconder a tag da visualização, serve para qualquer tag
+      ID:
+      Style:
+      Tabindex:
+-->
+<h1>Isso é um titulo</h1>
+
+<img src="https://lc-public-assets.s3.sa-east-1.amazonaws.com/images/Cover/LetsCodeCover.png" hidden>
+<!-- tag de imagem obrigatorio uso do src
+que armazena o caminho da onde a imagem está hospedada, seja em cloud ou arquivo em pastas-->
+
+<input type="text">
+<!-- tag de preenchimento e interação com o usuário
+é possível modificar sua forma através dos atributos
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input
+-->
+
+<div class="atributoglobal1">
+  <p>Paragrafo 1</p>
+</div>
+
+<div class="atributoglobal2" contented itable="false">
+  <p>Paragrafo 2</p>
+</div>
+
+<div contenteditable="true">Content Editable Consigo Editar</div>
+<div contenteditable="false" hidden>Nome</div>
+<div contenteditable="false" Hidden>Nome fantasia</div>
+<div data-XPTO="teste">Atributo Global Data</div>
+
+<p id="paragrafo">Atributo global ID</p>
+
+<div class="carrinho">
+  <p> Carrinho</p>
+  <h1 id="ptitulo">Titulo</h1>
+  <h1 id="pvalor">Valor</h1>
+</div>
+
+<div>
+  <button style="color: brown; border:3px purple solid ; border-radius: 20em;">Atributo global Style</h2>
+</div>
+
+<div class="tabindex">
+  <input type="text" tabindex="1">
+  <input type="radio" tabindex="3">
+  <input type="checkbox" tabindex="2">
+
+</div>
+
+<div class="title">
+  <p title="pareiomouse">title</p>
+</div>
