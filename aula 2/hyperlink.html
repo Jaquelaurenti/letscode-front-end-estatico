@@ -1,0 +1,103 @@
+<!--
+  Elemento de ancora, onde você liga o texto a algum determinado
+  conteúdo através da tag <a>
+    - Consegue ancorar os seguintes itens:
+      - URL 
+      - Fragmentos
+      - E-mail
+      - Telefone
+      - Entre outros.
+-->
+
+<!-- Ancora URL -->
+<div>
+  <p>
+    <a href="https://www.google.com.br/" >
+      Conteúdo ancorado para a página do google
+    </a>
+  </p>
+  
+</div>
+
+<!--- Faz o download da imagem referenciada -->
+<div>
+  <p>
+    <a href="../aula 1/assets/images/img_1.jpeg" download="">
+      Faz o download da imagem
+    </a>
+  </p>
+  
+</div>
+
+<!--- Faz uma âncora com o email-->
+<div>
+  <p>
+    <a href="mailto:letscode@gmail.com" >
+      Contate-me
+    </a>
+  </p>  
+</div>
+
+<!--- Faz uma âncora com o telefone-->
+<div>
+  <p>
+    <a href="tel:+5511963112394" >
+      Ligue para nós
+    </a>
+  </p>  
+</div>
+
+<!-- Ancora por fragmentos -->
+
+<div>
+  <p> Saiba mais sobre nós</p>
+  <ul>
+    <li><a href="#ifood">Sobre nós</a></li>
+    <li><a href="#historia">Nossa História</a></li>
+    <li><a href="#code">LETS CODE</a></li>
+  </ul>
+
+  <h1 id="sobre">Sobre Nós</h1>
+    <p id="ifood">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ex excepturi suscipit, ipsam facilis est voluptate consequuntur illum quas iusto tenetur officiis sunt maxime cum cupiditate odit eaque corporis ducimus.</p>
+  <h1 id="historia">Nossa Historia</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsum soluta sint animi placeat. Magni perspiciatis adipisci dolore, deleniti, laudantium temporibus rerum beatae modi, suscipit ea eaque pariatur ratione natus!</p>
+  <h2 id="ifood">Ifood</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea odit ab quos pariatur sit culpa perferendis. Animi facere nisi modi consequatur quasi minus aspernatur ab, deleniti culpa, vitae rerum nihil!</p>
+  <h2>Lets Code</h2>
+  <p id="code">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti enim aperiam unde corporis eaque, facere dolores dicta officia nam adipisci architecto consequatur sunt aspernatur? Debitis, vitae. Modi, eveniet ipsam.</p>
+</div>
+
+<!--Caminhos de Pastas URLS
+  - Caminho Absoluto
+  - Caminho Relativo
+-->
+
+<!-- ../ raiz do projeto e mudar de pasta 
+    ./ pasta atual e navegar entra os arquivos
+-->
+<div>
+  <img src="../aula 1/assets/images/download.jpeg">
+</div>
+
+<!-- Entendendo caminho absoluto e relativo
+  Absoluto: ele inclui o protocolo de dominio se for uma url
+  ou seja o https://
+-->
+
+<div>
+  <p>
+    <!-- A tag target ao invés de substituir a página, leva para uma aba nova-->
+    <a href="https://www.google.com.br/" target="_blank" >
+      Absoluto
+    </a>
+  </p>
+
+  <p>
+    <a href="www.google.com.br.html" >
+      Relativo
+    </a>
+  </p>
+  
+</div>
+
+
